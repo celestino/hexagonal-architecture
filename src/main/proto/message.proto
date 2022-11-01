@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.celestino.sandbox.notification.domain.model";
+option java_outer_classname = "Event";
+
+message Message {
+
+  string id = 1;
+  string author = 2;
+  string content = 3;
+}
