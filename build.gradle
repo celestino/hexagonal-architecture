@@ -14,7 +14,6 @@ repositories {
 }
 
 dependencies {
-
     // ANNOTATION
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     annotationProcessor 'org.projectlombok:lombok'
@@ -22,21 +21,20 @@ dependencies {
     // HELPER
     compileOnly 'org.projectlombok:lombok'
 
-
     // PERSISTENCE
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.mysql:mysql-connector-j'
 
     // WEB
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
-	// KAFKA
-	implementation 'org.springframework.kafka:spring-kafka'
-	implementation 'com.google.protobuf:protobuf-java:3.21.8'
+    // KAFKA
+    implementation 'org.springframework.kafka:spring-kafka'
+    implementation 'com.google.protobuf:protobuf-java:3.21.8'
 
-	// TEST
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'io.projectreactor:reactor-test'
+    // TEST
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.projectreactor:reactor-test'
 }
 
 tasks.named('test') {
